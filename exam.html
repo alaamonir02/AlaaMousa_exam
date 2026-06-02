@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaa Mousa Portfolio</title>
+    <style>
+        * {
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+        }
+
+        body {
+           font-family: sans-serif;
+           background-color: #f5f5f5;
+           color: #333333;
+        }
+
+        :root {
+            --primary-color: #2b4c7e;
+            --accent-color: #d97706;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 1rem;
+        }
+
+        .about-section, .skills-section {
+            max-width: 100%;
+            padding: 2rem;
+        }
+
+        .about-section h2, .skills-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .skill-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-card p {
+            font-size: 0.95rem;
+            color: #666666;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<header class="page-header">
+    <h1 class="logo">MyPortfolio</h1>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am Alaa Monir Mousa, a student of Intelligent Systems and Computer Engineering 🥀💻.
+            I am currently in the learning phase; my goal is to integrate several disciplines,
+            such as software engineering with artificial intelligence.
+        </p>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <article class="skills-grid">
+
+            <article class="skill-card">
+                <span class="card-icon">🅰️</span>
+                <h3>AutoCAD</h3>
+                <p>Design and engineering drawings.</p>
+            </article>
+            <article class="skill-card">
+                <span class="card-icon">🗒️</span>
+                <h3>HTML</h3>
+                <p>Web development and semantic structure.</p>
+            </article>
+
+            <article class="skill-card">
+                <span class="card-icon">📊</span>
+                <h3>GitHub</h3>
+                <p>version control and collaboration.</p>
+            </article>
+
+        </article>
+    </section>
+</main>
+
+</body>
+
+</html>
